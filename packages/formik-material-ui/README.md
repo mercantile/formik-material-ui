@@ -21,3 +21,31 @@ npm pack --workspace ./packages
 npm i ../formik-material-ui/formik-material-ui-4.0.0.tgz
 npm i ../formik-material-ui/formik-material-ui-lab-1.0.0.tgz
 ```
+
+## Publishing a new version
+
+```bash
+# before having merged to master
+
+# bump desired packages to a major alpha version
+npm version premajor --preid alpha
+npm version premajor --preid alpha --workspace formik-material-ui
+npm version premajor --preid alpha --workspace formik-material-ui-lab
+# or simply bump the prelease version
+npm version prerelease
+npm version prerelease --workspace formik-material-ui
+npm version prerelease --workspace formik-material-ui-lab
+
+# once you have merged to master, do the following:
+
+# create git tag and push it
+git tag -a @mercantile/formik-material-ui@4.0.0-alpha.0 -m "@mercantile/formik-material-ui version 4.0.0-alpha.0"
+git push origin @mercantile/formik-material-ui@4.0.0-alpha.0
+
+git tag -a @mercantile/formik-material-ui-lab@1.0.0-alpha.0 -m "@mercantile/formik-material-ui-lab version 1.0.0-alpha.0"
+git push origin @mercantile/formik-material-ui-lab@1.0.0-alpha.0
+
+# publish
+npm publish ./packages --access public --workspace @mercantile/formik-material-ui --tag alpha
+npm publish ./packages --access public --workspace @mercantile/formik-material-ui-lab --tag alpha
+```
