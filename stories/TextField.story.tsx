@@ -1,26 +1,18 @@
-import * as React from 'react';
-import Button from '@material-ui/core/Button';
-import { Formik, Form, Field } from 'formik';
-import {
-  LinearProgress,
-  MenuItem,
-  withStyles,
-  Theme,
-  createStyles,
-  WithStyles,
-  TextField as MuiTextField,
-} from '@material-ui/core';
+import Button from '@mui/material/Button';
+import LinearProgress from '@mui/material/LinearProgress';
+import MenuItem from '@mui/material/MenuItem';
+import MuiTextField from '@mui/material/TextField';
 import { action } from '@storybook/addon-actions';
+import { Field, Form, Formik } from 'formik';
+import * as React from 'react';
 import * as yup from 'yup';
-
-import Wrapper from './Wrapper';
-
 import {
+  fieldToTextField,
   TextField,
   TextFieldProps,
-  fieldToTextField,
 } from '../packages/formik-material-ui/src/TextField';
 import FormValues from './FormValues';
+import Wrapper from './Wrapper';
 
 interface Values {
   user: { email: string };
@@ -53,25 +45,6 @@ const ranges = [
   },
 ];
 
-const styles = (theme: Theme) =>
-  createStyles({
-    container: {
-      display: 'flex',
-      flexWrap: 'wrap',
-    },
-    textField: {
-      marginLeft: theme.spacing(1),
-      marginRight: theme.spacing(1),
-      width: 200,
-    },
-    dense: {
-      marginTop: 19,
-    },
-    menu: {
-      width: 200,
-    },
-  });
-
 const UpperCasingTextField = (props: TextFieldProps) => {
   return (
     <MuiTextField
@@ -86,7 +59,7 @@ const UpperCasingTextField = (props: TextFieldProps) => {
   );
 };
 
-export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => (
+const TextFieldStory = () => (
   <Wrapper title="Text Field">
     <Formik<Values>
       initialValues={{
@@ -151,11 +124,6 @@ export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => (
             name="select"
             label="With Select"
             select
-            SelectProps={{
-              MenuProps: {
-                className: classes.menu,
-              },
-            }}
             helperText="Please select Range"
             margin="normal"
           >
@@ -182,4 +150,6 @@ export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => (
       )}
     </Formik>
   </Wrapper>
-));
+);
+
+export default TextFieldStory;

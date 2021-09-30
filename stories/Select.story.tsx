@@ -1,30 +1,26 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
-import { Formik, Form, Field } from 'formik';
+import Button from '@mui/material/Button';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import { SxProps } from '@mui/system';
 import { action } from '@storybook/addon-actions';
-import { createStyles, withStyles, Theme, WithStyles } from '@material-ui/core';
-import MenuItem from '@material-ui/core/MenuItem';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
-
-import Wrapper from './Wrapper';
-import FormValues from './FormValues';
+import { Field, Form, Formik } from 'formik';
+import React from 'react';
 import { Select } from '../packages/formik-material-ui/src/main';
-
-const styles = ({ spacing }: Theme) =>
-  createStyles({
-    formControl: {
-      margin: spacing(1),
-      minWidth: 120,
-    },
-  });
+import FormValues from './FormValues';
+import Wrapper from './Wrapper';
 
 interface Values {
   age: string;
   pets: string[];
 }
 
-export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => {
+const sxFormControl: SxProps = {
+  m: 1,
+  minWidth: 120,
+};
+
+const SelectStory = () => {
   return (
     <Wrapper title="Select">
       <Formik<Values>
@@ -38,7 +34,7 @@ export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => {
       >
         {({ submitForm, values }) => (
           <Form>
-            <FormControl className={classes.formControl}>
+            <FormControl sx={sxFormControl}>
               <InputLabel htmlFor="age-simple">Age</InputLabel>
               <Field
                 component={Select}
@@ -53,7 +49,7 @@ export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => {
               </Field>
             </FormControl>
             <br />
-            <FormControl className={classes.formControl}>
+            <FormControl sx={sxFormControl}>
               <InputLabel htmlFor="age-simple-empty" shrink>
                 Age (Empty)
               </InputLabel>
@@ -74,7 +70,7 @@ export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => {
               </Field>
             </FormControl>
             <br />
-            <FormControl className={classes.formControl}>
+            <FormControl sx={sxFormControl}>
               <InputLabel shrink htmlFor="age-native">
                 Native Age
               </InputLabel>
@@ -93,7 +89,7 @@ export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => {
               </Field>
             </FormControl>
             <br />
-            <FormControl className={classes.formControl}>
+            <FormControl sx={sxFormControl}>
               <InputLabel htmlFor="pets">Pets</InputLabel>
               <Field
                 component={Select}
@@ -111,7 +107,7 @@ export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => {
               </Field>
             </FormControl>
             <br />
-            <FormControl className={classes.formControl}>
+            <FormControl sx={sxFormControl}>
               <InputLabel shrink htmlFor="pets-native">
                 Native Pets
               </InputLabel>
@@ -141,4 +137,6 @@ export default withStyles(styles)(({ classes }: WithStyles<typeof styles>) => {
       </Formik>
     </Wrapper>
   );
-});
+};
+
+export default SelectStory;
