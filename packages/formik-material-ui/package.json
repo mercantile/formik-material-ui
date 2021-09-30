@@ -61,7 +61,7 @@
     "test:updateSnapshot": "jest --updateSnapshot",
     "lint": "eslint \"./{src,stories}/**/*.{tsx,ts,js}\"",
     "lint:fix": "eslint --fix \"./{src,stories}/**/*.{tsx,ts,js}\"",
-    "prepublishOnly": "yarn test && yarn build && yarn package"
+    "prepublishOnly": "npm run test && npm run build && npm run package"
   },
   "gitHead": "409cd27bdca327979c0dd7e20edd3ab773620396"
 }

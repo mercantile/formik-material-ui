@@ -5,7 +5,6 @@ dist
 .rpt2_cache
 yarn-error.log
 .idea
-package-lock.json
 
 storybook-static/
 coverage

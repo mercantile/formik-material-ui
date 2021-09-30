@@ -23,11 +23,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: build
         run: |
-          yarn install --frozen-lockfile
-          yarn typecheck
-          yarn lint
-          yarn test
-          yarn build
+          npm install --frozen-lockfile
+          npm run typecheck
+          npm run lint
+          npm run test
+          npm run build
         working-directory: packages/formik-material-ui
         env:
           CI: true
