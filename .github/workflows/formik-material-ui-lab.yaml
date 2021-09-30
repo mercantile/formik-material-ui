@@ -18,16 +18,16 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
       - name: build
         run: |
-          npm install
-          npm run typecheck
-          npm run lint
-          npm run test
-          npm run build
+          yarn install --frozen-lockfile
+          yarn typecheck
+          yarn lint
+          yarn test
+          yarn build
         working-directory: packages/formik-material-ui-lab
         env:
           CI: true

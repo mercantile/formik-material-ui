@@ -6,13 +6,13 @@ title: Getting Started
 ## Installation
 
 ```
-npm i formik @mercantile/formik-material-ui @mui/material @emotion/react @emotion/styled
+yarn add formik @mercantile/formik-material-ui @mui/material @emotion/react @emotion/styled
 ```
 
 ### Material-UI Lab (Optional)
 
 ```
-npm i @date-io/date-fns @mui/lab @mercantile/formik-material-ui-lab
+yarn add @date-io/date-fns @mui/lab @mercantile/formik-material-ui-lab
 ```
 
 ## Quick Start

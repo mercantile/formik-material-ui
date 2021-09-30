@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: build
         run: |
-          npm install
-          npm run prettier --list-different
+          yarn install --frozen-lockfile
+          yarn prettier --list-different
         env:
           CI: true
