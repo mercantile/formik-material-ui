@@ -1,5 +1,5 @@
 {
-  "name": "formik-material-ui",
+  "name": "@mercantile/formik-material-ui",
   "version": "3.0.1",
   "license": "MIT",
   "typings": "dist/main.d.ts",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stackworx/formik-material-ui"
+    "url": "https://github.com/mercantile/formik-material-ui"
   },
   "jest": {
     "globals": {

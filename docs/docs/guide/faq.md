@@ -33,9 +33,12 @@ From this code is not at all obvious who is in control of the state. Therefore w
 But you can do this a custom field
 
 ```jsx
+import {
+  fieldToTextField,
+  TextFieldProps,
+} from '@mercantile/formik-material-ui';
 import TextField from '@mui/material/TextField';
 import { Field } from 'formik';
-import { fieldToTextField, TextFieldProps } from 'formik-material-ui';
 
 function UpperCasingTextField(props: TextFieldProps) {
   const {

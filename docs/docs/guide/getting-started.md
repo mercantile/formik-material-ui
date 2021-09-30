@@ -6,21 +6,21 @@ title: Getting Started
 ## Installation
 
 ```
-npm i formik formik-material-ui @mui/material @emotion/react @emotion/styled
+npm i formik @mercantile/formik-material-ui @mui/material @emotion/react @emotion/styled
 ```
 
 ### Material-UI Lab (Optional)
 
 ```
-npm i @date-io/date-fns @mui/lab formik-material-ui-lab
+npm i @date-io/date-fns @mui/lab @mercantile/formik-material-ui-lab
 ```
 
 ## Quick Start
 
 ```jsx {4,39,46}
+import { TextField } from '@mercantile/formik-material-ui';
 import { Button, LinearProgress } from '@mui/material';
 import { Formik, Form, Field } from 'formik';
-import { TextField } from 'formik-material-ui';
 import * as React from 'react';
 
 interface Values {
@@ -92,9 +92,9 @@ Note: that the `Field` wrapper is not used, for more details on why see the [FAQ
 Several properties are purposefully excluded, please see the [FAQ](guide/faq.md) for details.
 
 ```jsx
+import { TextField } from '@mercantile/formik-material-ui';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import InputAdornment from '@mui/material/InputAdornment';
-import { TextField } from 'formik-material-ui';
 
 <TextField
   name="customized"
@@ -115,12 +115,16 @@ import { TextField } from 'formik-material-ui';
 See [MUI _About the lab_](https://mui.com/components/about-the-lab/) for more information
 
 ```jsx {4-8,9,12,16,32,34,36}
+import {
+  DatePicker,
+  DateTimePicker,
+  TimePicker,
+} from '@mercantile/formik-material-ui-lab';
 import AdapterDateFns from '@mui/lab/AdapterDateFns'; // Depending on the library you picked
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import Button from '@mui/material/Button';
 import LinearProgress from '@mui/material/LinearProgress';
 import { Formik, Form, Field } from 'formik';
-import { DatePicker, DateTimePicker, TimePicker } from 'formik-material-ui-lab';
 import * as React from 'react';
 
 function App() {
@@ -178,9 +182,9 @@ function App() {
 Several properties are purposefully excluded, please see the [FAQ](guide/faq.md) for details.
 
 ```jsx
+import { TextField } from '@mercantile/formik-material-ui';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import InputAdornment from '@mui/material/InputAdornment';
-import { TextField } from 'formik-material-ui';
 
 <TextField
   name="customized"
