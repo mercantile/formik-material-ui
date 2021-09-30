@@ -1,13 +1,14 @@
 # Formik Material-UI
 
-![](https://github.com/stackworx/formik-material-ui/workflows/Build%20formik-material-ui/badge.svg)
-![](https://github.com/stackworx/formik-material-ui/workflows/Build%20formik-material-ui-lab/badge.svg)
+![](https://github.com/mercantile/formik-material-ui/workflows/Build%20formik-material-ui/badge.svg)
+![](https://github.com/mercantile/formik-material-ui/workflows/Build%20formik-material-ui-lab/badge.svg)
 [![license](https://badgen.now.sh/badge/license/MIT)](./LICENSE)
 
-Bindings for using [Formik](https://github.com/jaredpalmer/formik) with [MUI](https://mui.com/).
+Fork of [formik-material-ui](https://github.com/mercantile/formik-material-ui). Bindings for using [Formik](https://github.com/jaredpalmer/formik) with [MUI](https://mui.com/).
 
-- [Documentation](https://stackworx.github.io/formik-material-ui)
-- [Code Sandbox](https://codesandbox.io/s/915qlr56rp)
+- [Getting started](./docs/docs/guide/getting-started.md)
+- [Documentation for formik-material-ui](./docs/docs/api/material-ui.md)
+- [Documentation for formik-material-ui-lab](./docs/docs/api/material-ui.md)
 
 This project requires Formik>= 2.0.0. For Formik one please use formik-material-ui@1.0.x
 
@@ -18,6 +19,34 @@ This project requires Formik>= 2.0.0. For Formik one please use formik-material-
 npm pack --workspace ./packages
 
 # in your project's folder
-npm i ../formik-material-ui/formik-material-ui-4.0.0.tgz
-npm i ../formik-material-ui/formik-material-ui-lab-1.0.0.tgz
+yarn add ../formik-material-ui/formik-material-ui-4.0.0.tgz
+yarn add ../formik-material-ui/formik-material-ui-lab-1.0.0.tgz
+```
+
+## Publishing a new version
+
+```bash
+# before having merged to master
+
+# bump desired packages to a major alpha version
+yarn version --premajor --preid alpha --no-git-tag-version
+yarn workspace @mercantile/formik-material-ui version --premajor --preid alpha --no-git-tag-version
+yarn workspace @mercantile/formik-material-ui-lab version --premajor --preid alpha --no-git-tag-version
+# or simply bump the prelease version
+yarn version --prerelease --no-git-tag-version
+yarn workspace @mercantile/formik-material-ui version --prerelease --no-git-tag-version
+yarn workspace @mercantile/formik-material-ui-lab version --prerelease --no-git-tag-version
+
+# once you have merged to master, do the following:
+
+# create git tag and push it
+git tag -a @mercantile/formik-material-ui@4.0.0-alpha.0 -m "@mercantile/formik-material-ui version 4.0.0-alpha.0"
+git push origin @mercantile/formik-material-ui@4.0.0-alpha.0
+
+git tag -a @mercantile/formik-material-ui-lab@1.0.0-alpha.0 -m "@mercantile/formik-material-ui-lab version 1.0.0-alpha.0"
+git push origin @mercantile/formik-material-ui-lab@1.0.0-alpha.0
+
+# publish
+yarn workspace @mercantile/formik-material-ui publish --access public --tag alpha
+yarn workspace @mercantile/formik-material-ui-lab publish --access public --tag alpha
 ```

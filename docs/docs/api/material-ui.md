@@ -121,10 +121,10 @@ import { RadioGroup } from 'formik-material-ui';
 #### Example
 
 ```jsx
-import { Field } from 'formik';
-import MenuItem from '@mui/material/MenuItem';
-import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import { Field } from 'formik';
 import { Select } from 'formik-material-ui';
 
 <FormControl>
