@@ -1,6 +1,6 @@
 {
   "name": "@mercantile/formik-material-ui-root",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "repository": "git@github.com:mercantile/formik-material-ui.git",
   "author": "Mercantile Engineering <engineering@getmercantile.com>",
   "license": "MIT",
