@@ -6,6 +6,7 @@
 
 Fork of [formik-material-ui](https://github.com/mercantile/formik-material-ui). Bindings for using [Formik](https://github.com/jaredpalmer/formik) with [MUI](https://mui.com/).
 
+- [Getting started](./docs/docs/guide/getting-started.md)
 - [Documentation for formik-material-ui](./docs/docs/api/material-ui.md)
 - [Documentation for formik-material-ui-lab](./docs/docs/api/material-ui.md)
 

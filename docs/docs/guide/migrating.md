@@ -15,7 +15,7 @@ title: Migrating
 
 ```jsx
 import { Field } from 'formik';
-import { Checkbox, Switch } from '@mercantile/formik-material-ui';
+import { Checkbox, Switch } from 'formik-material-ui';
 
 <Field name="checkbox" component={Checkbox} />;
 <Field name="switch" component={Switch} />;
@@ -27,7 +27,7 @@ import { Checkbox, Switch } from '@mercantile/formik-material-ui';
 
 ```jsx
 import { Field } from 'formik';
-import { Checkbox, Switch } from '@mercantile/formik-material-ui';
+import { Checkbox, Switch } from 'formik-material-ui';
 
 import {
   // Field Helpers
