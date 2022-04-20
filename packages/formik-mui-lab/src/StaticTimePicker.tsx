@@ -1,7 +1,8 @@
-import MuiStaticTimePicker, {
-  StaticTimePickerProps as MuiStaticTimePickerProps,
-} from '@mui/lab/StaticTimePicker';
 import TextField, { TextFieldProps } from '@mui/material/TextField';
+import {
+  StaticTimePicker as MuiStaticTimePicker,
+  StaticTimePickerProps as MuiStaticTimePickerProps,
+} from '@mui/x-date-pickers/StaticTimePicker';
 import { FieldProps, getIn } from 'formik';
 import * as React from 'react';
 import { createErrorHandler } from './errorHandler';

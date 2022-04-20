@@ -12,7 +12,7 @@ yarn add formik formik-mui @mui/material @emotion/react @emotion/styled
 ### MUI Lab (Optional)
 
 ```
-yarn add @mui/lab formik-mui-lab
+yarn add @mui/x-data-grid @mui/x-date-pickers formik-mui-lab
 ```
 
 ## Quick Start
@@ -115,10 +115,10 @@ import { TextField } from 'formik-mui';
 See [MUI _About the lab_](https://mui.com/components/about-the-lab/) for more information
 
 ```jsx {4-8,9,12,16,32,34,36}
-import AdapterDateFns from '@mui/lab/AdapterDateFns'; // Depending on the library you picked
-import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import Button from '@mui/material/Button';
 import LinearProgress from '@mui/material/LinearProgress';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'; // Depending on the library you picked
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { Formik, Form, Field } from 'formik';
 import { DatePicker, DateTimePicker, TimePicker } from 'formik-mui-lab';
 import * as React from 'react';

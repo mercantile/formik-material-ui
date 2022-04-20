@@ -5,9 +5,9 @@
   "typings": "dist/main.d.ts",
   "sideEffects": false,
   "peerDependencies": {
-    "@emotion/react": ">=11.4.1",
-    "@emotion/styled": ">=11.3.0",
-    "@mui/material": ">=5.0.0",
+    "@emotion/react": ">=11.9.0",
+    "@emotion/styled": ">=11.8.1",
+    "@mui/material": ">=5.6.2",
     "formik": ">=2.2.9",
     "react": ">=17.0.2",
     "tiny-warning": ">=1.0.3"
