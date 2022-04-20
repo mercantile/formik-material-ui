@@ -1,6 +1,6 @@
 ---
-id: mui-lab
-title: MUI Lab
+id: mui-x
+title: MUI X
 ---
 
 The following props are always excluded: `name, value, error`, and additional ones where it makes sense.
@@ -14,7 +14,7 @@ When using picker components initialize the starting value to `new Date()` and n
 #### Example
 
 ```jsx
-import { DatePicker } from 'formik-mui-lab';
+import { DatePicker } from 'formik-mui-x';
 
 <Field
   component={DatePicker}
@@ -32,7 +32,7 @@ import { DatePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { DateTimePicker } from 'formik-mui-lab';
+import { DateTimePicker } from 'formik-mui-x';
 
 <Field component={DateTimePicker} label="label" name="name" />;
 ```
@@ -44,7 +44,7 @@ import { DateTimePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { DesktopDatePicker } from 'formik-mui-lab';
+import { DesktopDatePicker } from 'formik-mui-x';
 
 <Field component={DesktopDatePicker} label="label" name="name" />;
 ```
@@ -56,7 +56,7 @@ import { DesktopDatePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { DesktopDateTimePicker } from 'formik-mui-lab';
+import { DesktopDateTimePicker } from 'formik-mui-x';
 
 <Field component={DesktopDateTimePicker} label="label" name="name" />;
 ```
@@ -68,7 +68,7 @@ import { DesktopDateTimePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { DesktopTimePicker } from 'formik-mui-lab';
+import { DesktopTimePicker } from 'formik-mui-x';
 
 <Field component={DesktopTimePicker} label="label" name="name" />;
 ```
@@ -80,7 +80,7 @@ import { DesktopTimePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { MobileDatePicker } from 'formik-mui-lab';
+import { MobileDatePicker } from 'formik-mui-x';
 
 <Field component={MobileDatePicker} label="label" name="name" />;
 ```
@@ -92,7 +92,7 @@ import { MobileDatePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { MobileDateTimePicker } from 'formik-mui-lab';
+import { MobileDateTimePicker } from 'formik-mui-x';
 
 <Field component={MobileDateTimePicker} label="label" name="name" />;
 ```
@@ -104,7 +104,7 @@ import { MobileDateTimePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { MobileTimePicker } from 'formik-mui-lab';
+import { MobileTimePicker } from 'formik-mui-x';
 
 <Field component={MobileTimePicker} label="label" name="name" />;
 ```
@@ -116,7 +116,7 @@ import { MobileTimePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { StaticDatePicker } from 'formik-mui-lab';
+import { StaticDatePicker } from 'formik-mui-x';
 
 <Field component={StaticDatePicker} label="label" name="name" />;
 ```
@@ -128,7 +128,7 @@ import { StaticDatePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { StaticDateTimePicker } from 'formik-mui-lab';
+import { StaticDateTimePicker } from 'formik-mui-x';
 
 <Field component={StaticDateTimePicker} label="label" name="name" />;
 ```
@@ -140,7 +140,7 @@ import { StaticDateTimePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { StaticTimePicker } from 'formik-mui-lab';
+import { StaticTimePicker } from 'formik-mui-x';
 
 <Field component={StaticTimePicker} label="label" name="name" />;
 ```
@@ -152,7 +152,7 @@ import { StaticTimePicker } from 'formik-mui-lab';
 #### Example
 
 ```jsx
-import { TimePicker } from 'formik-mui-lab';
+import { TimePicker } from 'formik-mui-x';
 
 <Field component={TimePicker} label="label" name="name" />;
 ```

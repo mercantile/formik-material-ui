@@ -1,20 +1,18 @@
-import React from 'react';
-
 import { storiesOf } from '@storybook/react';
-
-import TextFieldStory from './TextField.story';
+import React from 'react';
+import AutocompleteStory from './Autocomplete.story';
 import CheckboxStory from './Checkbox.story';
 import InputBaseStory from './InputBase.story';
 import KitchenSinkStory from './KitchenSink.story';
-import SelectStory from './Select.story';
-import SwitchesStory from './Switches.story';
-import SimpleFileUploadStory from './SimpleFileUpload.story';
 import RadioGroupStory from './RadioGroup.story.tsx';
-import DatePickerStory from './DatePicker.story.tsx';
-import TimePickerStory from './TimePicker.story.tsx';
-import DateTimePickerStory from './DateTimePicker.story.tsx';
-import ToggleButtonGroupStory from './lab/ToggleButtonGroup.story';
-import AutocompleteStory from './lab/Autocomplete.story';
+import SelectStory from './Select.story';
+import SimpleFileUploadStory from './SimpleFileUpload.story';
+import SwitchesStory from './Switches.story';
+import TextFieldStory from './TextField.story';
+import ToggleButtonGroupStory from './ToggleButtonGroup.story';
+import DatePickerStory from './x/DatePicker.story.tsx';
+import DateTimePickerStory from './x/DateTimePicker.story.tsx';
+import TimePickerStory from './x/TimePicker.story.tsx';
 
 storiesOf('Formik', module)
   .add('Text Field', () => <TextFieldStory />)
