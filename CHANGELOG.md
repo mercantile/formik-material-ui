@@ -1,3 +1,9 @@
+## alpha.4
+
+- Upgrade MUI dependencies
+- Rename `formik-mui-lab` to `formik-mui-x`
+- Fix contributing instructions
+
 ## 0.0.16
 
 - Fixed TextField select variation

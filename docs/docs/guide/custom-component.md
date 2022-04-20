@@ -14,8 +14,8 @@ Add Wrappers have a corresponding function export (`fieldToTextField`, `fieldToC
 A simple test input that always uppercases the input
 
 ```jsx
+import { fieldToTextField, TextFieldProps } from '@mercantile/formik-mui';
 import TextField from '@mui/material/TextField';
-import { fieldToTextField, TextFieldProps } from 'formik-mui';
 
 function UpperCasingTextField(props: TextFieldProps) {
   const {

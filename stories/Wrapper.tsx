@@ -1,7 +1,7 @@
-import AdapterDateFns from '@mui/lab/AdapterDateFns';
-import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import React, { ReactNode } from 'react';
 
 interface Props {
