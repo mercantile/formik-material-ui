@@ -1,8 +1,8 @@
 {
-  "name": "formik-mui-root",
+  "name": "@mercantile/formik-mui-root",
   "version": "0.0.0",
-  "repository": "git@github.com:stackworx/formik-mui.git",
-  "author": "Ciaran Liedeman <ciaran@stackworx.io>",
+  "repository": "git@github.com:mercantile/formik-mui.git",
+  "author": "Mercantile Engineering <engineering@getmercantile.com>",
   "license": "MIT",
   "typings": "dist/main.d.ts",
   "private": true,

@@ -10,7 +10,7 @@ The following props are always excluded: `name, value, error`, and additional on
 #### Example
 
 ```jsx
-import { Autocomplete } from 'formik-mui';
+import { Autocomplete } from '@mercantile/formik-mui';
 
 const options = [{ title: 'The Shawshank Redemption', year: 1994 }, ...]
 
@@ -43,7 +43,7 @@ _Note the manual inclusion of the error_
 #### Example
 
 ```jsx
-import { Checkbox } from 'formik-mui';
+import { Checkbox } from '@mercantile/formik-mui';
 
 <Field component={Checkbox} type="checkbox" name="checked" />;
 ```
@@ -57,7 +57,7 @@ A convenience wrapper that adds label to Checkbox using FormControlLabel. Suppor
 #### Example
 
 ```jsx
-import { CheckboxWithLabel } from 'formik-mui';
+import { CheckboxWithLabel } from '@mercantile/formik-mui';
 
 <Field
   component={CheckboxWithLabel}
@@ -74,7 +74,7 @@ import { CheckboxWithLabel } from 'formik-mui';
 #### Example
 
 ```jsx
-import { InputBase } from 'formik-mui';
+import { InputBase } from '@mercantile/formik-mui';
 
 <Field component={InputBase} name="inputBase" />;
 ```
@@ -86,9 +86,9 @@ import { InputBase } from 'formik-mui';
 #### Example
 
 ```jsx
+import { RadioGroup } from '@mercantile/formik-mui';
 import { FormControlLabel, Radio, LinearProgress } from '@mui/material/core';
 import { Formik, Field } from 'formik';
-import { RadioGroup } from 'formik-mui';
 
 <Formik {...otherProps}>
   {({ isSubmitting }) => (
@@ -123,11 +123,11 @@ import { RadioGroup } from 'formik-mui';
 #### Example
 
 ```jsx
-import { Field } from 'formik';
+import { Select } from '@mercantile/formik-mui';
 import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
-import { Select } from 'formik-mui';
+import { Field } from 'formik';
 
 <Field
   component={Select}
@@ -158,7 +158,7 @@ import { Select } from 'formik-mui';
 #### Example
 
 ```jsx
-import { SimpleFileUpload } from 'formik-mui';
+import { SimpleFileUpload } from '@mercantile/formik-mui';
 
 <Field component={SimpleFileUpload} name="file" label="Simple File Upload" />;
 ```
@@ -180,7 +180,7 @@ interface SimpleFileUploadProps {
 ## Switch
 
 ```jsx
-import { Switch } from 'formik-mui';
+import { Switch } from '@mercantile/formik-mui';
 
 <Field component={Switch} type="checkbox" name="switch" />;
 ```
@@ -192,7 +192,7 @@ import { Switch } from 'formik-mui';
 #### Example
 
 ```jsx
-import { TextField } from 'formik-mui';
+import { TextField } from '@mercantile/formik-mui';
 
 <Field
   component={TextField}
@@ -210,12 +210,12 @@ import { TextField } from 'formik-mui';
 #### Example
 
 ```tsx
+import { ToggleButtonGroup } from '@mercantile/formik-mui';
 import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
 import FormatAlignJustifyIcon from '@mui/icons-material/FormatAlignJustify';
 import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignLeft';
 import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight';
 import ToggleButton from '@mui/material/ToggleButton';
-import { ToggleButtonGroup } from 'formik-mui';
 
 <Field component={ToggleButtonGroup} name="name" type="checkbox">
   <ToggleButton value="left" aria-label="left aligned">

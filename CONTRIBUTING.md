@@ -2,13 +2,13 @@
 
 ```bash
 # from the root of this workspace
-yarn workspace formik-mui package
-yarn workspace formik-mui-x package
+yarn workspace @mercantile/formik-mui package
+yarn workspace @mercantile/formik-mui-x package
 npm pack --workspace ./packages
 
 # in your project's folder
-npm i ../formik-mui/formik-mui-4.0.0.tgz
-npm i ../formik-mui/formik-mui-x-1.0.0.tgz
+npm i ../formik-mui/mercantile-formik-mui-4.0.0-alpha.0.tgz
+npm i ../formik-mui/mercantile-formik-mui-x-1.0.0-alpha.0.tgz
 ```
 
 ## Publishing manually a new version
